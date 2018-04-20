@@ -1,7 +1,10 @@
 export class TestUtil {
   static canvasUtil () {
-    const m = Reflect.getPrototypeOf({'a': 1, 'b': 2});
+    const temp = {'a': 1, 'b': 2};
+    const m = Reflect.getPrototypeOf(temp);
     const n = Reflect.get({'a': 1, 'b': 2}, 'a');
-    console.log(n);
+    const l = Reflect.set(temp, 'testKey', 'testValue');
+    const j = Reflect.defineProperty(temp, 'cc', {});
+    console.log(temp);
   }
 }
