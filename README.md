@@ -3,8 +3,8 @@
 ### package.json
 ##### version verify
 * version Must match version exactly
-* >version Must be greater than version
-* >=version etc
+* \>version Must be greater than version
+* \>=version etc
 * <version
 * <=version
 * ~version "Approximately equivalent to version" See semver
