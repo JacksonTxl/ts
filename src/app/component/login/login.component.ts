@@ -1,5 +1,6 @@
 import {Component, forwardRef, Inject, OnInit} from '@angular/core';
 import {AbstractControl, FormBuilder, FormControl, FormGroup} from '@angular/forms';
+import { Router} from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -12,11 +13,13 @@ export class LoginComponent implements OnInit {
 
   constructor(
     @Inject(forwardRef(() => FormBuilder))
-    private formBuilder: FormBuilder
+    private formBuilder: FormBuilder,
+    private router: Router
   ) {
   }
 
   submit(): void {
+    this.router.navigate(['home']);
     console.log(this.validateForm.value);
   }
 

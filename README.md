@@ -1,29 +1,21 @@
 # Ng5Ts
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-
-
+### package.json
+##### version verify
+* version Must match version exactly
+* >version Must be greater than version
+* >=version etc
+* <version
+* <=version
+* ~version "Approximately equivalent to version" See semver
+* ^version "Compatible with version" See semver
+* 1.2.x 1.2.0, 1.2.1, etc., but not 1.3.0
+* http://... See 'URLs as Dependencies' below
+* \* Matches any version
+* "" (just an empty string) Same as *
+* version1 - version2 Same as >=version1 <=version2.
+* range1 || range2 Passes if either range1 or range2 are satisfied.
+* git... See 'Git URLs as Dependencies' below
+* user/repo See 'GitHub URLs' below
+* tag A specific version tagged and published as tag See npm-dist-tag
+* path/path/path See Local Paths below
