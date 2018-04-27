@@ -8,6 +8,7 @@ import {ReactiveFormsModule} from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { LoginComponent } from './component/login/login.component';
 import { HomeComponent } from './component/home/home.component';
+import { PagenotfoundComponent } from './component/pagenotfound/pagenotfound.component';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { HomeComponent } from './component/home/home.component';
     FormComponent,
     LoginComponent,
     HomeComponent,
+    PagenotfoundComponent,
   ],
   imports: [
     BrowserModule,
