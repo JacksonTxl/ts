@@ -5,6 +5,7 @@ import { ElModule } from 'element-angular';
 import { AppComponent } from './app.component';
 import { FormComponent } from './component/form/form.component';
 import {ReactiveFormsModule} from '@angular/forms';
+import { NgJsonEditorModule } from 'ang-jsoneditor';
 import { AppRoutingModule } from './app-routing.module';
 import { LoginComponent } from './component/login/login.component';
 import { HomeComponent } from './component/home/home.component';
@@ -23,7 +24,8 @@ import { PagenotfoundComponent } from './component/pagenotfound/pagenotfound.com
     BrowserModule,
     ElModule.forRoot(),
     ReactiveFormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgJsonEditorModule
   ],
   providers: [],
   bootstrap: [AppComponent]

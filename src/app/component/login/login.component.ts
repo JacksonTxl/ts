@@ -1,14 +1,23 @@
-import {Component, forwardRef, Inject, OnInit} from '@angular/core';
+import {Component, forwardRef, Inject, OnInit, ViewChild} from '@angular/core';
 import {AbstractControl, FormBuilder, FormControl, FormGroup} from '@angular/forms';
 import { Router} from '@angular/router';
+import { JsonEditorComponent, JsonEditorOptions } from 'ang-jsoneditor';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  styleUrls: ['./login.component.css'],
 })
 export class LoginComponent implements OnInit {
+  @ViewChild(JsonEditorComponent)
+  editor: JsonEditorComponent;
+  public editorOptions: JsonEditorOptions;
 
+  data = {'products': [{'name': 'car', 'product':
+    [{'name': 'honda', 'model':
+      [{'id': 'civic', 'name': 'civic'},
+        {'id': 'accord', 'name': 'accord'}, {'id': 'crv', 'name': 'crv'},
+        {'id': 'pilot', 'name': 'pilot'}, {'id': 'odyssey', 'name': 'odyssey'}]}]}]};
   validateForm: FormGroup;
 
   constructor(
@@ -16,8 +25,13 @@ export class LoginComponent implements OnInit {
     private formBuilder: FormBuilder,
     private router: Router
   ) {
+    this.editorOptions = new JsonEditorOptions();
+    this.editorOptions.modes = ['text', 'tree'];
+    console.log(this.editorOptions);
   }
-
+  public setTreeMode() {
+    this.editor.setMode('tree');
+  }
   submit(): void {
     this.router.navigate(['home']);
     console.log(this.validateForm.value);
