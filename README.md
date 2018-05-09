@@ -1,4 +1,4 @@
-# angular5
+# angular6
 
 ### package.json
 ##### version verify
