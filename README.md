@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-# angular6
-=======
 # angular5
->>>>>>> 1c4bd6526524447343b4e50a1f3ead8f42837b88
 
 ### package.json
 ##### version verify
