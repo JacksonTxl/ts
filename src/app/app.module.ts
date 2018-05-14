@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { CustomerModuleModule } from './customer-module/customer-module.module';
+import { TestPipe } from './util/pipe/test.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TestPipe
   ],
   imports: [
     BrowserModule,
