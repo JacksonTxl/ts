@@ -1,4 +1,4 @@
-# angular6
+# angular5
 
 ### package.json
 ##### version verify
@@ -20,3 +20,4 @@
 * tag A specific version tagged and published as tag See npm-dist-tag
 * path/path/path See Local Paths below
 
+# angular 6 new features

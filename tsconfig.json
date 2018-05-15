@@ -1,7 +1,10 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+<<<<<<< HEAD
     "baseUrl": "./",
+=======
+>>>>>>> 1c4bd6526524447343b4e50a1f3ead8f42837b88
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
@@ -15,6 +18,7 @@
     "lib": [
       "es2017",
       "dom"
+<<<<<<< HEAD
     ],
     "paths": {
       "base": [
@@ -23,3 +27,8 @@
     }
   }
 }
+=======
+    ]
+  }
+}
+>>>>>>> 1c4bd6526524447343b4e50a1f3ead8f42837b88
