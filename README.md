@@ -21,3 +21,5 @@
 * path/path/path See Local Paths below
 
 # angular 6 new features
+### note 
+#### git change branch to master
