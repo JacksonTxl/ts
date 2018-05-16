@@ -7,5 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
-  title1 = 1000.3333;
+  condition = false;
+  click () {
+    this.condition = !this.condition;
+  }
 }

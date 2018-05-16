@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 import { CustomerModuleModule } from './customer-module/customer-module.module';
 import { TestPipe } from './util/pipe/test.pipe';
 import { HighlightDirective } from './util/directive/highlight.directive';
+import { ConstructDirective } from './util/construct-directive/construct.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     TestPipe,
-    HighlightDirective
+    HighlightDirective,
+    ConstructDirective
   ],
   imports: [
     BrowserModule,
